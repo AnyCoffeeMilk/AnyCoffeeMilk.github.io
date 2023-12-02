@@ -1,0 +1,263 @@
+:root {
+  --light-green: #f0f2e5;
+  --dark-green: #30402d;
+  --dark-brown: #75441c;
+  --light-brown: #a87038;
+  --yellow: #eecd7d;
+  --shadow-md: 0 1px 8px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 1px 16px 0 rgb(0 0 0 / 0.2), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "ZCOOL KuaiLe";
+  background-color: var(--light-green);
+}
+
+header {
+  height: 40vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #131417;
+}
+
+header img {
+  height: 40vh;
+  width: 100%;
+  filter: blur(4px);
+  position: absolute;
+  object-fit: cover;
+  opacity: 80%;
+}
+
+header div {
+  font-size: 2.5em;
+  color: white;
+  padding: 0.75em 1.5em;
+}
+
+.poems {
+  margin: 2em auto;
+  padding: 0 2em;
+  font-size: 1.5em;
+  display: flex;
+  gap: 1.5em;
+  flex-grow: 0;
+  font-family: 'Ma Shan Zheng';
+}
+
+.poem {
+  margin: 0 auto;
+  width: 2.5em;
+  color: black;
+  background: var(--dark-brown);
+  border-radius: 2px;
+}
+
+.pl {
+  padding: 0.75em;
+  width: 1em;
+  border-radius: 2px;
+  background: white;
+  box-shadow: var(--shadow-lg)
+}
+
+.placeholder {
+  margin-bottom: 7em;
+}
+
+.p_sm {
+  width: 2.25em;
+  margin: 4em 0;
+  font-size: 0.7em;
+  background: var(--dark-green);
+}
+
+.pl_sm {
+  width: 0.75em;
+}
+
+.p1 {
+  transform: translateX(6px) translateY(5px);
+}
+
+.p2 {
+  transform: translateX(6px) translateY(-5px);
+}
+
+.p3 {
+  transform: translateX(-4px) translateY(3px);
+}
+
+.p4 {
+  transform: translateX(-4px) translateY(-3px);
+}
+
+.p5 {
+  transform: translateX(4px) translateY(3px);
+}
+
+.p6 {
+  transform: translateX(4px) translateY(-3px);
+}
+
+header div{
+  position: absolute;
+}
+
+.center {
+  flex: 1;
+}
+
+.forum {
+  position: relative;
+  border-top: 2.5em solid var(--dark-brown);
+  box-shadow: var(--shadow-md);
+  background: white;
+  padding: 2em 2em;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  border-radius: 2px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4em;
+}
+
+.forum .block {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: var(--shadow-md);
+  border-bottom: 1px solid lightgray;
+  overflow: hidden;
+}
+
+.info {
+  display: flex;
+  background-color: var(--yellow);
+  gap: 0.6em;
+  padding: 1em 1.5em 1em 1.5em;
+}
+
+.urls {
+  background-color: white;
+  border-radius: 2px;
+  border-top: 2.5em solid var(--yellow);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-30px);
+  border-bottom: 1px solid lightgray;
+  max-width: 605px;
+  padding: 0.5em;
+  gap: 0.5em;
+  margin: 0 auto;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.urls .img {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.urls .img img {
+  width: 60px;
+  height: 60px;
+}
+
+.url_block {
+  padding: 1em;
+  border-radius: 2px;
+  max-width: 5em;
+  text-align: center;
+  border-bottom: 1px solid white;
+  background-color: var(--light-green);
+}
+
+.url_block:hover {
+  box-shadow: var(--shadow-md);
+  border-bottom: 1px solid lightgray;
+  text-decoration: underline;
+}
+
+.url_block .text {
+  padding-top: 0.5em;
+}
+
+.img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.img img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.info div .time {
+  font-size: 0.9em
+}
+
+.info div {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+
+.alter {
+  background-color: var(--light-brown);
+  color: white;
+}
+
+.alter div {
+  color: white;
+}
+
+.info div .room {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.block .text {
+  font-size: 1.1em;
+  padding: 1em 1.5em 1em 1.5em;
+}
+
+.block .text:before {
+  content: '— ';
+}
+
+.sub_title {
+  position: absolute;
+  top: -1.9em;
+  left: 1em;
+}
+
+.forum .sub_title {
+  color: white;
+}
