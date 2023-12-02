@@ -252,6 +252,10 @@ header div{
   content: '— ';
 }
 
+.l1 {
+  margin-left: 1em;
+}
+
 .sub_title {
   position: absolute;
   top: -2em;
