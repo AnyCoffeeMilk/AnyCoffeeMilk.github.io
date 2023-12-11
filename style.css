@@ -90,6 +90,8 @@ header div {
 
 .pl_sm {
     width: 0.75em;
+	writing-mode: vertical-lr;
+	font-family: "ZCOOL KuaiLe";
 }
 
 .p1 {
