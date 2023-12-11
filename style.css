@@ -52,7 +52,7 @@ header div {
 }
 
 .poems {
-    margin: 2em auto;
+    margin: 1em auto;
     padding: 0 2em;
     font-size: 1.5em;
     display: flex;
@@ -127,7 +127,6 @@ header div{
 .main {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 4em;
 }
 
 .forum {
@@ -135,13 +134,11 @@ header div{
     border-top: 2.5em solid var(--dark-brown);
     box-shadow: var(--shadow-md);
     background: white;
-    padding: 2em 2em;
-    /*max-width: 800px;*/
-    margin: 0 auto;
+    padding: 2em;
+	margin-top: 4em;
     display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-    /*flex-direction: column;*/
     gap: 2em;
     border-radius: 2px;
 }
@@ -150,14 +147,16 @@ header div{
     background-color: var(--light-yellow);
     border-radius: 2px;
     box-shadow: var(--shadow-md);
-	padding: 1.5em;
 	font-size: 1em;
+	display: flex;
 }
 
 .forum .block .container {
 	display: flex;
+	flex: 1;
+	padding: 2em 1.5em;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .forum .block .img {
@@ -166,7 +165,7 @@ header div{
 }
 
 .block .room {
-	margin-top: 4px;
+	margin-top: 8px;
 	text-align: right;
 }
 
